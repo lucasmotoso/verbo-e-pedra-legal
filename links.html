@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verbo e Pedra — Links Oficiais</title>
+  <meta name="description" content="Arquivo vivo de sabedoria antiga, estoicismo e espiritualidade sem dogmas. Acesse nossos canais oficiais e participe do Círculo Verbo e Pedra." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --vp-noite: #07090d;
+      --vp-noite-card: rgba(15, 19, 27, 0.88);
+      --vp-pedra: #6b6258;
+      --vp-bronze: #8b5e2e;
+      --vp-ambar: #d4a665;
+      --vp-marfim: #e8d9bf;
+      --vp-sol: #f4cb83;
+      --vp-borda: rgba(212, 166, 101, 0.28);
+      --vp-borda-forte: rgba(212, 166, 101, 0.7);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: var(--vp-noite);
+      background-image: 
+        radial-gradient(circle at 50% 15%, rgba(244, 203, 131, 0.10) 0%, transparent 60%),
+        radial-gradient(circle at 50% 85%, rgba(139, 94, 46, 0.08) 0%, transparent 60%),
+        linear-gradient(180deg, #07090d 0%, #0d1117 50%, #06070a 100%);
+      color: var(--vp-marfim);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 16px 60px;
+    }
+    .wrapper {
+      width: 100%;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Brasão & Cabeçalho */
+    .crest-box {
+      position: relative;
+      width: 104px;
+      height: 104px;
+      margin-bottom: 14px;
+      filter: drop-shadow(0 0 25px rgba(244, 203, 131, 0.28));
+    }
+    .crest-box svg {
+      width: 100%;
+      height: 100%;
+    }
+    h1.title {
+      font-family: 'Cinzel', serif;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 6px;
+      color: var(--vp-marfim);
+      text-shadow: 0 4px 20px rgba(244, 203, 131, 0.2);
+      margin-bottom: 4px;
+    }
+    p.tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-style: italic;
+      color: var(--vp-sol);
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+    }
+
+    /* Lista de Botões Institucionais */
+    .links-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    .btn-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      padding: 16px 20px;
+      background: var(--vp-noite-card);
+      border: 1px solid var(--vp-borda);
+      border-radius: 6px;
+      color: var(--vp-marfim);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      position: relative;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    }
+    .btn-link:hover {
+      border-color: var(--vp-sol);
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(244, 203, 131, 0.18);
+    }
+    .btn-link .icon {
+      font-size: 16px;
+      color: var(--vp-sol);
+    }
+
+    /* Botão Dourado de Destaque (Lead Magnet / Círculo) */
+    .btn-featured {
+      background: linear-gradient(135deg, rgba(212, 166, 101, 0.18) 0%, rgba(139, 94, 46, 0.25) 100%);
+      border: 1px solid var(--vp-sol);
+      color: var(--vp-sol);
+      box-shadow: 0 0 20px rgba(244, 203, 131, 0.15);
+    }
+    .btn-featured:hover {
+      background: linear-gradient(135deg, #d4a665 0%, #b8863f 100%);
+      color: #0b0e14;
+      border-color: #f4cb83;
+    }
+    .btn-featured:hover .icon {
+      color: #0b0e14;
+    }
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--vp-sol);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--vp-sol);
+      display: inline-block;
+    }
+
+    /* Caixa Rápida de Newsletter */
+    .lead-box {
+      width: 100%;
+      background: rgba(18, 23, 33, 0.7);
+      border: 1px solid var(--vp-borda);
+      border-radius: 6px;
+      padding: 22px 20px;
+      margin-bottom: 32px;
+    }
+    .lead-box h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      color: var(--vp-marfim);
+      margin-bottom: 6px;
+    }
+    .lead-box p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 16px;
+      color: rgba(232, 217, 191, 0.85);
+      margin-bottom: 16px;
+    }
+    .lead-form {
+      display: flex;
+      gap: 8px;
+    }
+    .lead-input {
+      flex: 1;
+      background: #07090d;
+      border: 1px solid var(--vp-borda);
+      border-radius: 4px;
+      padding: 10px 14px;
+      font-size: 13px;
+      color: var(--vp-marfim);
+      outline: none;
+    }
+    .lead-input:focus { border-color: var(--vp-sol); }
+    .lead-btn {
+      background: linear-gradient(135deg, #d4a665 0%, #b8863f 100%);
+      color: #0b0e14;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 16px;
+      font-family: 'Cinzel', serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .lead-feedback {
+      display: none;
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--vp-sol);
+    }
+
+    /* Rodapé */
+    footer {
+      font-size: 12px;
+      color: rgba(232, 217, 191, 0.6);
+      margin-top: auto;
+    }
+    footer a {
+      color: var(--vp-sol);
+      text-decoration: none;
+      margin: 0 6px;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- BRASÃO -->
+    <div class="crest-box">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 660">
+        <g fill="none" stroke="#D4A665" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M205 490V278C205 160 291 92 400 92S595 160 595 278V490" stroke-width="15"/>
+          <path d="M240 485V282M560 485V282M198 278h80M522 278h80" stroke-width="12"/>
+          <path d="M256 492q82-48 144 4q62-52 144-4v77q-80-28-144 26q-64-54-144-26z" stroke-width="13"/>
+          <path d="M400 153v190M310 248h180M337 185l126 126M463 185L337 311" stroke-width="7"/>
+        </g>
+        <circle cx="400" cy="248" r="14" fill="#F4CB83"/>
+      </svg>
+    </div>
+
+    <h1 class="title">VERBO E PEDRA</h1>
+    <p class="tagline">"A sabedoria do espírito através do tempo."</p>
+
+    <!-- LINKS INSTITUCIONAIS -->
+    <div class="links-list">
+      <!-- DESTAQUE: CÍRCULO / CARTA MATINAL -->
+      <a href="#circulo" onclick="document.getElementById('email-input').focus(); return false;" class="btn-link btn-featured">
+        <span class="pulse-dot"></span>
+        <span>Entrar no Círculo (Carta Diária 06h)</span>
+      </a>
+
+      <!-- YOUTUBE -->
+      <a href="https://www.youtube.com/@verboepedra" target="_blank" rel="noopener" class="btn-link">
+        <span class="icon">▶</span>
+        <span>Canal no YouTube (Edições & Shorts)</span>
+      </a>
+
+      <!-- INSTAGRAM -->
+      <a href="https://www.instagram.com/verboepedra" target="_blank" rel="noopener" class="btn-link">
+        <span class="icon">◈</span>
+        <span>Instagram (@verboepedra)</span>
+      </a>
+
+      <!-- FACEBOOK -->
+      <a href="https://www.facebook.com/profile.php?id=61568953185368" target="_blank" rel="noopener" class="btn-link">
+        <span class="icon">f</span>
+        <span>Página Oficial no Facebook</span>
+      </a>
+
+      <!-- TIKTOK -->
+      <a href="https://www.tiktok.com/@clipcastoficialbrasil" target="_blank" rel="noopener" class="btn-link">
+        <span class="icon">◆</span>
+        <span>TikTok (@clipcastoficialbrasil)</span>
+      </a>
+
+      <!-- PORTAL COMPLETO -->
+      <a href="index.html" class="btn-link">
+        <span class="icon">🏛️</span>
+        <span>Portal Institucional & Manifesto</span>
+      </a>
+    </div>
+
+    <!-- CAIXA RÁPIDA DE CAPTURA (O CÍRCULO) -->
+    <div id="circulo" class="lead-box">
+      <h3>O Círculo Verbo e Pedra</h3>
+      <p>Receba todas as manhãs uma reflexão de sabedoria prática no seu e-mail.</p>
+      <form class="lead-form" onsubmit="event.preventDefault(); document.getElementById('feedback').style.display='block'; this.reset();">
+        <input id="email-input" type="email" required placeholder="Seu melhor e-mail" class="lead-input" />
+        <button type="submit" class="lead-btn">Participar</button>
+      </form>
+      <div id="feedback" class="lead-feedback">
+        ✓ Inscrição confirmada. Sua primeira reflexão chegará às 06h00.
+      </div>
+    </div>
+
+    <!-- RODAPÉ LEGAL -->
+    <footer>
+      <p>
+        <a href="terms.html">Termos</a> • 
+        <a href="privacy.html">Privacidade</a> • 
+        <a href="deletion.html">Exclusão de Dados</a>
+      </p>
+      <p style="margin-top: 8px;">© 2026 Verbo e Pedra Studio</p>
+    </footer>
+  </div>
+</body>
+</html>
